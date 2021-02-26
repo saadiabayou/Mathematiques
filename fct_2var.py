@@ -11,11 +11,10 @@ Created on Fri Feb 26 08:25:10 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Fonction à 2 variables
+# Fonction de 2 variables
 def fxy (x,y):
     #cercle
     return x**2+y**2
-
 
 
 # Dimensions repère
