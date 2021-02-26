@@ -35,7 +35,7 @@ plt.title("Rayons-cercles")
 plt.xlabel("Axe des absicces , x")
 plt.ylabel("Axe des ordonnées, y ")
 # Sauvegarde
-plt.savefig("Rayons.png")
+plt.savefig("fig1-Rayons.png")
 # Visualisation
 plt.colorbar()
 plt.show()
@@ -49,6 +49,6 @@ plt.title("Contours rayons - cercles")
 plt.xlabel("Axe des abscisses ")
 plt.ylabel("Axe des ordonnées ")
 # Sauvegarde
-plt.savefig("Contours-rayons.png")
+plt.savefig("fig2-Contours-cercle.png")
 # Visualisation
 plt.show()
