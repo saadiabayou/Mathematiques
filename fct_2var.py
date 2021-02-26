@@ -28,21 +28,23 @@ X,Y=np.meshgrid(x,y)
 z=fxy(X,Y)
 
 # Tracé cercles
-plt.contourf(X,Y,z)
+plt.figure(1)
+fig1=plt.contourf(X,Y,z)
 # Titres et légendes
-plt.title("Graphe fxy")
+plt.title("Graphe 2D fxy")
 
 plt.xlabel("Axe des absicces")
 plt.ylabel("Axe des ordonnées")
 # Sauvegarde
 plt.savefig("Fig1-Graphe.png")
 # Visualisation
-plt.colorbar()
+plt.colorbar(fig1)
 plt.show()
 
 
-# Tracé contours cercles
-plt.contour(X,Y,z)
+## Tracé contours cercles
+plt.figure(2)
+fig2=plt.contour(X,Y,z)
 # Titre et légendes
 plt.title("Contours fxy")
 plt.xlabel("Axe des abscisses")
