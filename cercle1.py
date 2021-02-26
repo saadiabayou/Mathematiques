@@ -32,8 +32,8 @@ plt.contourf(x,y,R)
 # Titres et légendes
 plt.title("Rayons-cercles")
 
-plt.xlabel("Axe des absicces , x")
-plt.ylabel("Axe des ordonnées, y ")
+plt.xlabel("Axe des absicces")
+plt.ylabel("Axe des ordonnées")
 # Sauvegarde
 plt.savefig("fig1-Rayons.png")
 # Visualisation
@@ -46,8 +46,8 @@ plt.contour(X,Y,R)
 
 # Titre et légendes
 plt.title("Contours rayons - cercles")
-plt.xlabel("Axe des abscisses ")
-plt.ylabel("Axe des ordonnées ")
+plt.xlabel("Axe des abscisses")
+plt.ylabel("Axe des ordonnées")
 # Sauvegarde
 plt.savefig("fig2-Contours-cercle.png")
 # Visualisation
