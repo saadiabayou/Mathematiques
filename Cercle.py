@@ -12,31 +12,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Fonction de 2 variables
-def fxy (x,y):
-    #cercle
+def cercle (x,y):
+    """ Calcul le rayon d'un cercle de centre O(0,0)"""
     return x**2+y**2
 
 
 # Dimensions repère
-x=np.arange(-10,10)
-y=np.arange(-10,10)
+x=np.arange(-10,11)
+y=np.arange(-10,11)
 
 # Maillage
 X,Y=np.meshgrid(x,y)
 
 # Équation du cercle - fonction à deux variables
-z=fxy(X,Y)
+z=cercle(X,Y)
 
 # Tracé cercles
 plt.figure(1)
 fig1=plt.contourf(X,Y,z)
 # Titres et légendes
-plt.title("Graphe 2D fxy")
+plt.title("Rayon du cercle - 2D")
 
-plt.xlabel("Axe des absicces")
-plt.ylabel("Axe des ordonnées")
+plt.xlabel("x")
+plt.ylabel("y")
 # Sauvegarde
-plt.savefig("Fig1-Graphe.png")
+plt.savefig("Fig1-distribution rayon.png")
 # Visualisation
 plt.colorbar(fig1)
 plt.show()
@@ -46,10 +46,10 @@ plt.show()
 plt.figure(2)
 fig2=plt.contour(X,Y,z)
 # Titre et légendes
-plt.title("Contours fxy")
-plt.xlabel("Axe des abscisses")
-plt.ylabel("Axe des ordonnées")
+plt.title("Cercles")
+plt.xlabel("x")
+plt.ylabel("y")
 # Sauvegarde
-plt.savefig("Fig2-Contours.png")
+plt.savefig("Fig2-Contours-cercle.png")
 # Visualisation
 plt.show()
