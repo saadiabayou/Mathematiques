@@ -14,7 +14,8 @@ import matplotlib.pyplot as plt
 # Fonction de 2 variables
 def cercle (x,y):
     """ Calcul le rayon d'un cercle de centre O(0,0)"""
-    return x**2+y**2
+    r=x**2+y**2
+    return r
 
 
 # Dimensions repère
