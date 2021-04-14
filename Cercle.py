@@ -6,7 +6,6 @@ Created on Fri Feb 26 08:25:10 2021
 @author: Saadia Bayou
 """
 
-
 # Imports 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,7 +15,6 @@ def cercle (x,y):
     """ Calcul le rayon d'un cercle de centre O(0,0)"""
     r=x**2+y**2
     return r
-
 
 # Dimensions repère
 x=np.arange(-10,11)
@@ -33,7 +31,6 @@ plt.figure(1)
 fig1=plt.contourf(X,Y,z)
 # Titres et légendes
 plt.title("Rayon du cercle - 2D")
-
 plt.xlabel("x")
 plt.ylabel("y")
 # Sauvegarde
